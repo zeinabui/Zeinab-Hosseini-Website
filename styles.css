@@ -148,6 +148,7 @@ main {
 .name-text span {
      color: #310377;
      font-weight: 600;
+     font-family: "Lato";
 }
 
 .occupation {

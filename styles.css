@@ -8,8 +8,40 @@ body {
      font-family: 'Poppins', sans-serif;
      text-align: center;
      justify-content: center;
+     position: relative;
+     
 }
 
+
+.scroll {
+     background-color: rgba(241, 238, 246, 0.2);
+     border-radius: 50%;
+     /* position: absolute; */
+     position: fixed;
+     bottom: 48px;
+     right: 48px;
+     width: 48px;
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 0 4px rgba(49, 3, 119, 0.5);
+     backdrop-filter: blur(2px);
+
+}
+
+.scroll a {
+     font-size: 18px;
+     font-weight: 900;
+     text-decoration: none;
+     color: #57525E;
+     
+}
+
+main {
+     margin-top: 48px;
+     width: 100%;
+} 
 
 /* colors */
 
@@ -31,7 +63,9 @@ body {
      padding: 32px 48px;
      background-color: #FEFEFD;
      gap: 24px;
+
 }
+
 
 .nav-links {
      display: flex;
@@ -59,6 +93,22 @@ body {
      white-space: nowrap;
 }
 
+.cta 
+{
+     font-size: 16px;
+     text-decoration: none;
+     font-weight: 500;
+    background-color: #310377;
+     color: #FEFEFD;
+     border-radius: 8px;
+     padding: 8px 12px;
+     white-space: nowrap;
+     &:hover {
+          box-shadow: 0 0 8px rgba(74, 28, 138, 0.4);
+     }
+}
+
+
 .about-me {
      display: flex;
      align-items: center;
@@ -71,7 +121,7 @@ body {
 .my-details {
      display: flex;
      flex-direction: column;
-     gap: 16px;
+     gap: 20px;
      /* width: 50%; */
      text-align: left;
      max-width: 900px;
@@ -165,7 +215,7 @@ body {
 /* my edu */
 
 .my-education {
-     margin-top: 32px;
+     margin-top: 48px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -256,7 +306,7 @@ body {
 }
 
 .my-skills {
-     margin-top: 32px;
+     margin-top: 48px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -301,6 +351,13 @@ body {
      font-weight: 400;
 }
 
+.my-projects {
+     margin-top: 48px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 32px;
+}
 .projects-wrapper {
      display: flex;
      gap: 68px;
@@ -366,7 +423,11 @@ body {
      justify-content: center;
      min-width: 375px;
      
+     
 }
+
+
+
 .form div {
      width: 100%;
      display: flex;
@@ -383,6 +444,7 @@ body {
      flex-direction: column;
      align-items: center;
      gap: 32px;
+     position: relative;
 }
 
 .form label {
@@ -418,12 +480,19 @@ body {
 .submit {
      width: 100%;
      padding: 12px 20px;
-     font-size: 16px;
+     font-size: 18px;
      font-weight: 500;
      color: #f1eef6;
      background: linear-gradient(to left, #310377, #A974FB);
      border: none;
      border-radius: 8px;
+     letter-spacing: 1.5px;
+     transition: all 0.3s ease-in;
+     overflow: hidden;
+     &:hover {
+          box-shadow: 0 0 3px rgba(49, 3, 119, 1);
+          font-weight: 600;
+     }
 }
 
 .cancel {
@@ -435,12 +504,75 @@ body {
      background-color: transparent;
      border-radius: 8px;
      border: none;
-     box-shadow: 0 0 3px rgba(49, 3, 119, 1);;
+     box-shadow: 0 0 3px rgba(49, 3, 119, 1);
+     letter-spacing: 1.2px;
+     transition: all 0.3s ease-in;
+     overflow: hidden;
+     &:hover {
+          font-weight: 500;
+          color: #310377;
+     }
 
 }
 
 
+/* footer */
+footer {
+     margin-top: 48px ;
+     margin-bottom: 16px;
+}
+.social-media {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+     margin-top: 48px;
+     align-items: center;
+     justify-content: center;
+}
 
+.social-media p {
+     font-size: 18px;
+     color: #302D34;
+     font-weight: 600;
+}
 
+.s-links {
+     display: flex;
+     gap: 16px;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 16px;
 
+     
+}
+
+.s-links img {
+     &:hover {
+          box-shadow: 0 0 10px rgba(49, 3, 119, 0.6);
+          border-radius: 50%;
+          transform: scale(1.05);
+     }
+}
+
+.copy {
+     font-size: 14px;
+     font-weight: 400;
+     color: #57525E;
+}
+
+.left-align {
+     display: flex;
+     gap: 16px;
+     align-items: center;
+     justify-content: left;
+     padding-bottom: 16px;
+     margin-top: 24px;
+}
+
+*:focus {
+     outline-color: rgba(169, 116, 251, 0.5);
+     outline-width: 4px;
+     outline-offset: 2px;
+
+}
 
